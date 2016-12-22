@@ -1,0 +1,151 @@
+/* ------------------------------------------------
+
+	
+	////// GOOGLE FONTS //////
+
+
+------------------------------------------------ */
+
+.OpenSans{font-family: 'Open Sans', sans-serif;}
+
+
+
+/* ------------------------------------------------
+
+	
+	////// COLORS //////
+
+
+------------------------------------------------ */
+
+@background: #e9edec;
+@white: #fff;
+@black: #000;
+
+@green: #6d867d;
+
+
+/* ------------------------------------------------
+
+	
+	////// PRESETS //////
+
+
+------------------------------------------------ */
+
+h1,
+h2,
+h3,
+p{.OpenSans; font-weight: 300;}
+
+a{color: @green;}
+
+/* ------------------------------------------------
+
+	
+	////// HTML & BODY //////
+
+
+------------------------------------------------ */
+
+* { margin:0; padding:0; }
+
+html{height: 100%;}
+
+html,
+body{background-color: @background; }
+
+body{
+margin: 0 auto;
+height: 100%;
+position: relative;
+}
+
+
+
+/* ------------------------------------------------
+
+	
+	////// SITE //////
+
+
+------------------------------------------------ */
+#site{height:auto !important;min-height:100%; position:relative;
+	
+	.centered { 
+		width: 600px; 
+		margin-left: -300px;
+		margin-top: -235px; 
+		height: 470px; 
+		position: absolute; 
+		top: 50%; 
+		left: 50%;
+		
+		.row-fluid{
+			.span5 + .span7{padding-top: 20px; padding-left: 25px;}
+			.span6{
+				&.pd {padding-top: 10px;}
+			}
+		}
+	}
+	
+	.content{
+		&.visible-phone{text-align: center; margin-top: 40px;}
+		h1{margin-top: 0;}
+		h2{color: @green; font-size: 14px; line-height: 20px; text-shadow: 1px 1px 1px @white; margin: 0;}
+		p{color: @green; font-size: 13px; line-height: 20px; text-shadow: 1px 1px 1px @white;}
+	}
+	
+	input[type="text"]{.OpenSans; color: @green;}
+	input[type="submit"] {
+		.OpenSans;
+		margin-top: -8px;
+		background-color: @green;
+		border: 0;
+		color: @white;
+		padding: 4px 7px;
+		-webkit-border-radius: 5px;
+    	border-radius: 5px;
+        text-transform: uppercase;
+        font-size: 14px;  
+	}
+
+}
+
+
+
+/* ------------------------------------------------
+
+	
+	////// HEADER //////
+
+
+------------------------------------------------ */
+
+#header{}
+
+
+
+/* ------------------------------------------------
+
+	
+	////// CONTENT //////
+
+
+------------------------------------------------ */
+
+#content{}
+
+
+
+
+
+/* ------------------------------------------------
+
+	
+	////// FOOTER //////
+
+
+------------------------------------------------ */
+
+#footer{}
