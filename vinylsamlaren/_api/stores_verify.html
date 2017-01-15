@@ -1,0 +1,48 @@
+---
+permalink: /api/stores/verify
+---
+{% assign stores = (site.data.stores | sort: 'name' ) %}
+
+<a href="https://docs.google.com/spreadsheets/d/19Dgd9I1ZNjSNvu0gO0xIuinqWOWQ4xougthvflBDz_c/edit#gid=1549073343">Justera eventuella fel</a>
+<br />
+<br />
+
+<style>
+    th, td { white-space: nowrap; text-align: left; }
+    table { table-layout:fixed; border-collapse: collapse; }
+</style>
+<table style="font-size: 0.8em" border="1">
+    <tr>
+        <th valign="top">ID</th>
+        <th valign="top">Namn</th>
+        <th valign="top">Adress</th>
+        <th valign="top">Postnummer</th>
+        <th valign="top">Stad</th>
+        <th valign="top">Telefon</th>
+        <th valign="top">E-post</th>
+        <th valign="top">Hemsida</th>
+        <th valign="top">Facebook-sida</th>
+        <th valign="top">Öppettider</th>
+        <th valign="top">Beskrivning</th>
+        <th valign="top">Latitud</th>
+        <th valign="top">Longitud</th>
+    </tr>
+
+    {% for store in stores %}
+    <tr>
+        <td valign="top">{{ store.id }}</td>
+        <td valign="top">{{ store.name }}</td>
+        <td valign="top">{{ store.address }}</td>
+        <td valign="top">{{ store.zipCode }}</td>
+        <td valign="top">{{ store.city }}</td>
+        <td valign="top">{{ store.phone }}</td>
+        <td valign="top">{{ store.email }}</td>
+        <td valign="top">{{ store.websiteUrl }}</td>
+        <td valign="top">{{ store.facebookUrl }}</td>
+        <td valign="top">{{ store.openingHours }}</td>
+        <td valign="top">{{ store.description }}</td>
+        <td valign="top">{{ store.latitude }}</td>
+        <td valign="top">{{ store.longitude }}</td>
+    <tr>
+    {% endfor %}
+</table>
