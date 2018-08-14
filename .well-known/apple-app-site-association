@@ -4,7 +4,7 @@
         "details": [
             {
                 "appID": "PMEDFW438U.se.vinylsamlaren",
-                "paths": ["/store?id=*"]
+                "paths": ["/store?id=*", "/store/?id=*"]
             }
         ]
     }
