@@ -38,3 +38,5 @@ exclude:
 collections:
   api:
     output: true
+  stores:
+    output: true
