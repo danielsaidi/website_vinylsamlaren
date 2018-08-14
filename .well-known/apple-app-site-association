@@ -1,0 +1,13 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "PMEDFW438U.se.vinylsamlaren",
+                "paths": [
+                    "/butik/*"
+                ]
+            }
+        ]
+    }
+}
