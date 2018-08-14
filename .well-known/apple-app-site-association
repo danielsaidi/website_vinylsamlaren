@@ -3,7 +3,7 @@
         "apps": [],
         "details": [
             {
-                "appID": "PMEDFW438U.se.vinylsamlaren",
+                "appID": "se.vinylsamlaren",
                 "paths": [
                     "/butik/*"
                 ]
