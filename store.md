@@ -1,6 +1,6 @@
 ---
 layout: home
-permalink: /store/
+permalink: /store
 ---
 
 {% for my_page in site.pages %}
